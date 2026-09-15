@@ -1,0 +1,18 @@
+﻿using Tyuiu.VoytovichKA.Sprint5.Task3.V24.Lib;
+
+namespace Tyuiu.VoytovichKA.Sprint5.Task3.V24.Test
+{
+    [TestClass]
+    public sealed class DataServiceTest
+    {
+        [TestMethod]
+        public void IsValid()
+        {
+            DataService ds = new DataService();
+            int x = 3;
+            string path = ds.SaveToFileTextData(x);
+            bool fe = File.Exists(path);
+            Assert.IsTrue(fe);
+        }
+    }
+}
