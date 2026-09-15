@@ -16,8 +16,8 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task0.V27
             Console.WriteLine("* Выполнил: Войтович Климентий Антонович | НТм-25-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дано выражение, вычислить его значение при x = 3, результат сохранить в  ");
-            Console.WriteLine("* текстовый файл OutPutFileTask0.txt и вывести на консоль.                *");
+            Console.WriteLine("* Дано выражение, вычислить его значение при x = 3, результат сохранить в *");
+            Console.WriteLine("* текстовый файл и вывести на консоль.                                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             int x = 3;
@@ -28,6 +28,7 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task0.V27
             Console.WriteLine("***************************************************************************");
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res + " создан.");
+            Console.WriteLine();
             Console.ReadLine();
         }
     }

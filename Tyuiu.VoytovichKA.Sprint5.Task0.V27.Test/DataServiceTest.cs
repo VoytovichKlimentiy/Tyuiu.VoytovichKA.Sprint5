@@ -8,12 +8,11 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task0.V27.Test
         [TestMethod]
         public void IsValid()
         {
-            string path = @"E:\tyuiu\source\repos\Tyuiu.VoytovichKA.Sprint5\Tyuiu.VoytovichKA.Sprint5.Task0.V27\bin\Debug\net8.0\OutPutFileTask0.txt";
-            bool ex = true;
-            FileInfo fi=new FileInfo(path);
-            bool fe = fi.Exists;
+            int x = 3;
             DataService ds = new DataService();
-            Assert.AreEqual(ex, fe);
+            string path = ds.SaveToFileTextData(x);
+            bool fe = File.Exists(path);
+            Assert.IsTrue(fe);
         }
     }
 }
