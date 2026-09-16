@@ -11,7 +11,7 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task6.V17.Test
             DataService ds = new DataService();
             string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask6V17.txt");
             double res = ds.LoadFromDataFile(path);
-            Assert.AreEqual(5, res);
+            Assert.AreEqual(2, res);
         }
         [TestMethod]
         public void IsExisting()

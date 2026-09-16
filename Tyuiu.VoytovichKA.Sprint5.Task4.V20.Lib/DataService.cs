@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Globalization;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.VoytovichKA.Sprint5.Task4.V20.Lib
 {
@@ -6,8 +7,8 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task4.V20.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            int x = Convert.ToInt32(File.ReadAllText(path));
-            double res = Math.Round(Math.Pow(Math.Pow(x, 2) / Math.Sin(x), 3),3);
+            double x = Double.Parse(File.ReadAllText(path), CultureInfo.InvariantCulture);
+            double res = Math.Round(Math.Pow(Math.Pow(x, 2) / Math.Sin(x), 3),2);
             return res;
         }
     }

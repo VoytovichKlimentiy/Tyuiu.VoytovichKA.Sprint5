@@ -21,7 +21,7 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task4.V20
             Console.WriteLine("* и вернуть полученный результат на консоль.                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask4V0.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask4V20.txt");
             Console.WriteLine("Файл: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

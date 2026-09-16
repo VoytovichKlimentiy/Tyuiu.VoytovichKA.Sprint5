@@ -9,9 +9,9 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task4.V20.Test
         public void IsValid()
         {
             DataService ds = new DataService();
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask4V0.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask4V20.txt");
             double res = ds.LoadFromDataFile(path);
-            Assert.AreEqual(259395.09, res);
+            Assert.AreEqual(-13784.56, res);
         }
     }
 }
