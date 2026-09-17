@@ -6,7 +6,7 @@ namespace Tyuiu.VoytovichKA.Sprint5.Task7.V11.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string outpath=Path.Combine(Directory.GetCurrentDirectory(), "OutPutDataFileTask7V11.txt");
+            string outpath=Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V11.txt");
             if (File.Exists(outpath)) File.Delete(outpath);
 
             string text = File.ReadAllText(path), res="";
